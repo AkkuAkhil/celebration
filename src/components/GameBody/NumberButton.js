@@ -1,15 +1,11 @@
-import { URL } from "../../utils/utils";
+import { useContext } from "react";
+import GameContext from "../../context/GameContext";
 
-const NumberButton = ({ game, number, setImage, resetBlocksDiv }) => {
-  const buttonClick = (e, number) => {
-    resetBlocksDiv();
-    e.target.classList.add("number_button_closed");
-    e.target.classList.remove("number_button");
-    setImage(`${URL}game${game}/${number}.jpeg`);
-  };
+const NumberButton = ({ number }) => {
+  const { numberClick } = useContext(GameContext);
 
   return (
-    <button className="number_button" onClick={(e) => buttonClick(e, number)}>
+    <button className="number_button" onClick={(e) => numberClick(e, number)}>
       {number}
     </button>
   );

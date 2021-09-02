@@ -2,16 +2,12 @@ import NumberButtonGrid from "./NumberButtonGrid";
 import Timer from "./Timer";
 import Image from "./Image";
 
-const GameBody = ({ game, image, setImage, blocks, resetBlocksDiv }) => {
+const GameBody = () => {
   return (
     <div className="container">
-      <NumberButtonGrid
-        game={game}
-        setImage={setImage}
-        resetBlocksDiv={resetBlocksDiv}
-      />
+      <NumberButtonGrid />
       <Timer />
-      <Image game={game} image={image} blocks={blocks} />
+      <Image />
     </div>
   );
 };
