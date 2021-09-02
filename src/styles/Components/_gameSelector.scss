@@ -1,0 +1,98 @@
+.game_selector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: $size_2 0;
+}
+
+.game_logo {
+  height: 60px;
+}
+
+.game_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: centers;
+}
+
+.game_button {
+  margin: $size_4 $size_4;
+  width: $size_16;
+  height: $size_10;
+  background: $white;
+  color: $black;
+  border: $size_1 solid $black;
+  transition: 0.2s;
+  font-size: $size_7;
+  box-shadow: $grey 4px 4px 10px 1px;
+}
+
+.game_button:hover {
+  background-color: $blue_gradient_color;
+  background-image: $blue_gradient;
+  color: $black;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.game_button_active {
+  margin: $size_4 $size_4;
+  width: $size_16;
+  height: $size_10;
+  border: $size_1 solid $black;
+  transition: 0.2s;
+  font-size: $size_7;
+  background-color: $blue_gradient_color;
+  background-image: $blue_gradient;
+  color: $black;
+}
+
+.game_reset_button {
+  margin: $size_4 $size_4;
+  width: $size_15;
+  height: $size_10;
+  background-color: $pink_gradient_color;
+  background-image: $pink_gradient;
+  color: $black;
+  border: $size_1 solid $black;
+  transition: 0.2s;
+  font-size: $size_7;
+  box-shadow: $grey 4px 4px 10px 1px;
+}
+
+.game_reset_button:hover {
+  background-color: $orange_gradient_color;
+  background-image: $orange_gradient;
+  color: $white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.game_checkbox {
+  margin-left: $size_3;
+  width: 25px;
+  height: 25px;
+}
+
+.game_checkbox:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.game_status {
+  padding-top: 2px;
+  font-size: $size_8;
+}
+
+.game_reset_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.game_reset_icon {
+  margin-left: $size_2;
+  width: 15px;
+}

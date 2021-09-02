@@ -1,0 +1,65 @@
+.timer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+}
+
+.timer_sub_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: $size_1 dashed $black;
+  border-radius: $size_6;
+  background-color: $white;
+  padding: $size_9 $size_5;
+  box-shadow: $grey 5px 5px 8px 3px;
+}
+
+.timer_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer_input {
+  width: $size_10;
+  font-size: $size_8;
+  border: $size_1 solid $black;
+  padding: $size_2 $size_2;
+  margin: 0 $size_4;
+}
+
+.timer_number {
+  margin: $size_8 0;
+  color: $black;
+  font-size: $size_13;
+  border: 0 solid;
+}
+
+.timer_button {
+  margin: 0 $size_3;
+  width: $size_10;
+  height: $size_10;
+  background: $white;
+  border: 0 solid $black;
+  transition: 0.3s;
+  font-size: $size_7;
+}
+
+.timer_button:hover {
+  transform: scale(2.2);
+  cursor: pointer;
+}
+
+.timer_button_play {
+  color: $green;
+}
+.timer_button_pause {
+  color: $red;
+}
+.timer_button_resume {
+  color: $orange;
+}

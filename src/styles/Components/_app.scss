@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 97.5%;
+  background-color: $pink_gradient_color;
+  background-image: $pink_gradient;
+  border: $size_1 solid $black;
+  border-radius: $size_3;
+  box-shadow: $grey 4px 4px 18px 2px;
+  margin: $size_4;
+  padding: $size_10 0;
+}

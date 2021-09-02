@@ -1,0 +1,45 @@
+.number_button_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+.number_button {
+  margin: $size_4 $size_4;
+  width: $size_16;
+  height: $size_16;
+  background-color: $white_gradient_color;
+  background-image: $white_gradient;
+  color: $black;
+  border: $size_1 solid $black;
+  transition: 0.3s;
+  font-size: $size_13;
+  border-radius: $size_12;
+  padding-top: $size_4;
+  box-shadow: $grey 5px 5px 8px 3px;
+}
+
+.number_button:hover {
+  background-color: $green_gradient_color;
+  background-image: $green_gradient;
+  color: $white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.number_button_closed {
+  margin: $size_4 $size_4;
+  width: $size_16;
+  height: $size_16;
+  background-color: $orange_gradient_color;
+  background-image: $orange_gradient;
+  color: $pale_orange;
+  border: 0;
+  transition: 0.3s;
+  font-size: $size_13;
+  border-radius: $size_12;
+  padding-top: $size_4;
+}

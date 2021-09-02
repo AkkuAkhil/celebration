@@ -1,0 +1,22 @@
+.ReactModalPortal .ReactModal__Overlay {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: opacity 200ms ease-in-out;
+}
+
+.result_modal {
+  border: $size_2 dashed $black;
+  border-radius: $size_10;
+  box-shadow: $grey 4px 4px 18px 2px;
+  margin: $size_14 $size_4;
+  outline: none;
+  padding: $size_10;
+  background-color: $pink_gradient_color;
+  background-image: $pink_gradient;
+}
+
+.result_status {
+  font-size: $size_18;
+  color: $green;
+}

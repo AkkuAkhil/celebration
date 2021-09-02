@@ -1,0 +1,93 @@
+.score_board {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: $size_1 $size_1;
+}
+
+.score_board_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+.score_new_button {
+  width: $size_16;
+  padding: $size_2 $size_1;
+  background-color: $pink_gradient_color;
+  background-image: $pink_gradient;
+  color: $black;
+  border: $size_1 solid $black;
+  transition: 0.2s;
+  font-size: $size_7;
+  margin: 0 $size_10;
+  box-shadow: $grey 4px 4px 10px 1px;
+}
+
+.score_new_button:hover {
+  background-color: $orange_gradient_color;
+  background-image: $orange_gradient;
+  color: $white;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.score_new_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.score_new_icon {
+  margin-left: $size_2;
+  width: 25px;
+  height: 25px;
+}
+
+.score_button {
+  padding-top: $size_3;
+  width: $size_13;
+  background-color: $pink_gradient_color;
+  background-image: $pink_gradient;
+  color: $black;
+  border: $size_1 solid $black;
+  border-radius: $size_3;
+  transition: 0.2s;
+  font-size: $size_11;
+  box-shadow: $grey 4px 4px 10px 1px;
+}
+
+.score_button_win {
+  background-color: $green_gradient_color;
+  background-image: $green_gradient;
+  color: $white;
+}
+.score_button_lose {
+  background-color: $orange_gradient_color;
+  background-image: $orange_gradient;
+  color: $white;
+}
+
+.score_button:hover {
+  background-color: $blue_gradient_color;
+  background-image: $blue_gradient;
+  color: $black;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.score_input {
+  padding: $size_4 $size_2;
+  width: $size_20;
+  height: $size_10;
+  background: $white;
+  color: $black;
+  border: 0 solid $black;
+  transition: 0.2s;
+  font-size: $size_9;
+  background-color: $transparent;
+}
