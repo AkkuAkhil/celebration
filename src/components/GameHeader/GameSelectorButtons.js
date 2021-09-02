@@ -7,6 +7,7 @@ const GameSelectorButtons = ({ game, changeGame }) => {
         .map((el, i) => (
           <button
             onClick={() => changeGame(i + 1)}
+            key={i + 1}
             className={game === i + 1 ? "game_button_active" : "game_button"}
           >
             Game {i + 1}

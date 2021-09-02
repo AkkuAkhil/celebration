@@ -11,7 +11,7 @@ const GameBody = ({ game, image, setImage, blocks, resetBlocksDiv }) => {
         resetBlocksDiv={resetBlocksDiv}
       />
       <Timer />
-      <Image image={image} blocks={blocks} />
+      <Image game={game} image={image} blocks={blocks} />
     </div>
   );
 };
