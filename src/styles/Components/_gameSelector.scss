@@ -19,7 +19,7 @@
 
 .game_button {
   margin: $size_4 $size_4;
-  width: $size_16;
+  width: $size_13;
   height: $size_10;
   background: $white;
   color: $black;
@@ -39,7 +39,7 @@
 
 .game_button_active {
   margin: $size_4 $size_4;
-  width: $size_16;
+  width: $size_13;
   height: $size_10;
   border: $size_1 solid $black;
   transition: 0.2s;
@@ -95,4 +95,18 @@
 .game_reset_icon {
   margin-left: $size_2;
   width: 15px;
+}
+
+.game_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.game_icon {
+  margin-left: $size_2;
+  width: 25px;
+  height: 25px;
+  padding-right: 8px;
 }

@@ -1,8 +1,10 @@
+import { FaGamepad } from "react-icons/fa";
+
 const GameSelectorButtons = ({ game, changeGame }) => {
   return (
     <div className="game_row">
-      <h2 className="game_status">You are Now Playing Game {game}</h2>
-      {Array(3)
+      <h2 className="game_status">Now Playing Game {game}</h2>
+      {Array(4)
         .fill(1)
         .map((el, i) => (
           <button
@@ -10,7 +12,9 @@ const GameSelectorButtons = ({ game, changeGame }) => {
             key={i + 1}
             className={game === i + 1 ? "game_button_active" : "game_button"}
           >
-            Game {i + 1}
+            <span className="game_icon_container">
+              <FaGamepad className="game_icon" /> {i + 1}
+            </span>
           </button>
         ))}
     </div>

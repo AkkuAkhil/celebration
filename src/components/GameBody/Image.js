@@ -5,8 +5,12 @@ const Image = ({ game, image, blocks }) => {
   };
 
   const showAnswer = () => {
-    if (game !== 3) return;
-    const ansImage = image.replace("game3", "game4");
+    if (game !== 3 && game !== 4) return;
+
+    let ansImage;
+    if (game === 3) ansImage = image.replace("game3", "game5");
+    if (game === 4) ansImage = image.replace("game4", "game6");
+
     const [div] = document.getElementsByClassName("image");
     div.style.backgroundImage = `url(${ansImage})`;
   };
