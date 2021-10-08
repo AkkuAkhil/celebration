@@ -3,27 +3,27 @@ import GameContext from "../../context/GameContext";
 
 const TeamScore = () => {
   const {
+    team1,
+    team2,
     setTeam1,
     setTeam2,
     team1Score,
     team2Score,
-    team1,
-    team2,
-    incrementTeam1Score,
-    incrementTeam2Score,
+    updateTeam1Score,
+    updateTeam2Score,
   } = useContext(GameContext);
   const buttons = [
     {
       type: team1,
       change: setTeam1,
-      click: incrementTeam1Score,
+      click: updateTeam1Score,
       score: team1Score,
       check: team1Score > team2Score,
     },
     {
       type: team2,
       change: setTeam2,
-      click: incrementTeam2Score,
+      click: updateTeam2Score,
       score: team2Score,
       check: team2Score > team1Score,
     },

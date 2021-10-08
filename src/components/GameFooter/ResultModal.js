@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import GameContext from "../../context/GameContext";
+import {} from "react-icons/fa";
 
 const ResultModal = () => {
   const { team1Score, team2Score, team1, team2 } = useContext(GameContext);

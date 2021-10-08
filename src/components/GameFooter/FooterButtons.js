@@ -4,7 +4,7 @@ import ResultWindow from "./ResultWindow";
 import NewGameButton from "./NewGameButton";
 
 const FooterButtons = () => {
-  const { openModal } = useContext(GameContext);
+  const { openModal, resetScoreMode } = useContext(GameContext);
 
   return (
     <div className="score_board_row">
@@ -13,6 +13,13 @@ const FooterButtons = () => {
       </button>
       <ResultWindow />
       <NewGameButton />
+      <h2 className="game_status">Reverse</h2>
+      <input
+        className="game_checkbox"
+        type="checkbox"
+        defaultChecked={false}
+        onChange={resetScoreMode}
+      />
     </div>
   );
 };

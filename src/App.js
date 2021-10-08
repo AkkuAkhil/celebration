@@ -14,16 +14,30 @@ const App = () => {
   const [team1Score, setTeam1Score] = useState(0);
   const [team2Score, setTeam2Score] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+  const [scoreMode, setScoreMode] = useState(true);
+
+  const resetScoreMode = () => {
+    setScoreMode(!scoreMode);
+    scoreMode ? resetScoreToMax() : resetScore();
+  };
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
-  const incrementTeam1Score = () => setTeam1Score(team1Score + 1);
-  const incrementTeam2Score = () => setTeam2Score(team2Score + 1);
+  const updateTeam1Score = () =>
+    scoreMode ? setTeam1Score(team1Score + 1) : setTeam1Score(team1Score - 1);
+
+  const updateTeam2Score = () =>
+    scoreMode ? setTeam2Score(team2Score + 1) : setTeam2Score(team2Score - 1);
 
   const resetScore = () => {
     setTeam1Score(0);
     setTeam2Score(0);
+  };
+
+  const resetScoreToMax = () => {
+    setTeam1Score(80);
+    setTeam2Score(80);
   };
 
   const resetBlocksDiv = () => {
@@ -81,10 +95,8 @@ const App = () => {
         value={{
           game,
           changeGame,
-          setGame,
           resetGame,
           image,
-          setImage,
           resetImage,
           blocks,
           resetBlocks,
@@ -94,18 +106,17 @@ const App = () => {
           team2,
           setTeam2,
           team1Score,
-          setTeam1Score,
           team2Score,
-          setTeam2Score,
           isOpen,
           openModal,
           closeModal,
-          incrementTeam1Score,
-          incrementTeam2Score,
+          updateTeam1Score,
+          updateTeam2Score,
           resetScore,
           numberClick,
           showAnswer,
           blockClick,
+          resetScoreMode,
         }}
       >
         <GameHeader />
